@@ -1,6 +1,6 @@
 console.log("Hello");
 
-const fs = require("fs");
+import fs from "fs";
 
 const folderNames = [
   "Accessibility",
@@ -84,4 +84,22 @@ function createFolders() {
   }
 }
 
-createFolders();
+// createFolders();
+
+
+
+function generateFileNames(path: string){
+
+  console.log('generating...')
+  const dir = fs.readdirSync(path)
+  const json = JSON.stringify(dir)
+  // saving
+  fs.writeFileSync('./temp/names.json', json)
+
+  console.log('done')
+}
+
+// generateFileNames('./temp/icons')
+
+
+// function generate

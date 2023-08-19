@@ -1,6 +1,11 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Hello");
-var fs = require("fs");
-var folderNames = [
+const fs_1 = __importDefault(require("fs"));
+const folderNames = [
     "Accessibility",
     "Alert",
     "Alphabet",
@@ -71,12 +76,22 @@ var folderNames = [
     "Writing",
 ];
 function createFolders() {
-    for (var index = 0; index < folderNames.length; index++) {
-        var folderPath = "./icons/" + folderNames[index];
-        fs.mkdirSync(folderPath);
+    for (let index = 0; index < folderNames.length; index++) {
+        const folderPath = "./icons/" + folderNames[index];
+        fs_1.default.mkdirSync(folderPath);
         // create sub folders
-        fs.mkdirSync(folderPath + "/solid");
-        fs.mkdirSync(folderPath + "/stroke");
+        fs_1.default.mkdirSync(folderPath + "/solid");
+        fs_1.default.mkdirSync(folderPath + "/stroke");
     }
 }
-createFolders();
+// createFolders();
+function generateFileNames(path) {
+    console.log('generating...');
+    const dir = fs_1.default.readdirSync(path);
+    const json = JSON.stringify(dir);
+    // saving
+    fs_1.default.writeFileSync('./temp/names.json', json);
+    console.log('done');
+}
+// generateFileNames('./temp/icons')
+// function generate
