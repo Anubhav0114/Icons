@@ -95,3 +95,22 @@ function generateFileNames(path) {
 }
 // generateFileNames('./temp/icons')
 // function generate
+function renameFileName(path, prefix) {
+    const fileName = fs_1.default.readdirSync(path);
+    fileName.forEach((element) => {
+        let newName = prefix + element;
+        let oldPath = "./Anubhav/regular" + "/" + element;
+        let newPath = path + '/' + newName;
+        fs_1.default.renameSync(oldPath, newPath);
+    });
+}
+function removePreFix(path, prefix) {
+    const fileName = fs_1.default.readdirSync(path);
+    fileName.forEach((element) => {
+        let oldPath = path + '/' + element;
+        let removed = element.replace(prefix, "");
+        let newPath = path + '/' + removed;
+        fs_1.default.renameSync(oldPath, newPath);
+    });
+}
+removePreFix("./Anubhav", "regularanu");
