@@ -104,4 +104,4 @@ function addPrefix(path, prefix) {
         fs_1.default.renameSync(oldPath, newPath);
     });
 }
-addPrefix("sayam", "sam-");
+addPrefix("sayam/ionicons", "ionicon-");

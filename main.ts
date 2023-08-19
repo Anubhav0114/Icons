@@ -114,4 +114,4 @@ function addPrefix(path: string, prefix: string) {
   });
 }
 
-addPrefix("sayam","sam-")
+addPrefix("sayam/ionicons","ionicon-")
