@@ -94,4 +94,14 @@ function generateFileNames(path) {
     console.log('done');
 }
 // generateFileNames('./temp/icons')
-// function generate
+function addPrefix(path, prefix) {
+    let files = fs_1.default.readdirSync(path);
+    console.log(files);
+    files.forEach((file) => {
+        const newFile = prefix + file;
+        const oldPath = path + '/' + file;
+        const newPath = path + '/' + newFile;
+        fs_1.default.renameSync(oldPath, newPath);
+    });
+}
+addPrefix("sayam", "sam-");
