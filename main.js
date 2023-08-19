@@ -103,25 +103,25 @@ function prefix3(path, prefix) {
         fs_1.default.renameSync(oldpath, newPath);
     });
 }
-prefix3("./pawan/flowbite/solid/arrows/", "fs-");
-prefix3("./pawan/flowbite/solid/brands/", "fs-");
-prefix3("./pawan/flowbite/solid/e-commerce/", "fs-");
-prefix3("./pawan/flowbite/solid/emoji/", "fs-");
-prefix3("./pawan/flowbite/solid/file-folders/", "fs-");
-prefix3("./pawan/flowbite/solid/general/", "fs-");
-prefix3("./pawan/flowbite/solid/media/", "fs-");
-prefix3("./pawan/flowbite/solid/text/", "fs-");
-prefix3("./pawan/flowbite/solid/user/", "fs-");
-prefix3("./pawan/flowbite/solid/weather/", "fs-");
-prefix3("./pawan/flowbite/stroke/arrows/", "fs-");
-prefix3("./pawan/flowbite/stroke/e-commerce/", "fs-");
-prefix3("./pawan/flowbite/stroke/emoji/", "fs-");
-prefix3("./pawan/flowbite/stroke/file-folders/", "fs-");
-prefix3("./pawan/flowbite/stroke/general/", "fs-");
-prefix3("./pawan/flowbite/stroke/media/", "fs-");
-prefix3("./pawan/flowbite/stroke/text/", "fs-");
-prefix3("./pawan/flowbite/stroke/user/", "fs-");
-prefix3("./pawan/flowbite/stroke/weather/", "fs-");
+// prefix3("./pawan/flowbite/solid/arrows/","fs-");
+// prefix3("./pawan/flowbite/solid/brands/","fs-");
+// prefix3("./pawan/flowbite/solid/e-commerce/","fs-");
+// prefix3("./pawan/flowbite/solid/emoji/","fs-");
+// prefix3("./pawan/flowbite/solid/file-folders/","fs-");
+// prefix3("./pawan/flowbite/solid/general/","fs-");
+// prefix3("./pawan/flowbite/solid/media/","fs-");
+// prefix3("./pawan/flowbite/solid/text/","fs-");
+// prefix3("./pawan/flowbite/solid/user/","fs-");
+// prefix3("./pawan/flowbite/solid/weather/","fs-");
+// prefix3("./pawan/flowbite/stroke/arrows/","fs-");
+// prefix3("./pawan/flowbite/stroke/e-commerce/","fs-");
+// prefix3("./pawan/flowbite/stroke/emoji/","fs-");
+// prefix3("./pawan/flowbite/stroke/file-folders/","fs-");
+// prefix3("./pawan/flowbite/stroke/general/","fs-");
+// prefix3("./pawan/flowbite/stroke/media/","fs-");
+// prefix3("./pawan/flowbite/stroke/text/","fs-");
+// prefix3("./pawan/flowbite/stroke/user/","fs-");
+// prefix3("./pawan/flowbite/stroke/weather/","fs-");
 // np
 function removePrefix(path, prefix) {
     const removeFileName = fs_1.default.readdirSync(path);
