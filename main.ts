@@ -1,6 +1,7 @@
 
 
 import fs from "fs";
+import path from "path";
 
 const folderNames = [
   "Accessibility",
@@ -102,39 +103,3 @@ function generateFileNames(path: string){
 // generateFileNames('./temp/icons')
 
 
-// function generate
-
-function renameFileName(path : string , prefix : string){
-
-  const fileName = fs.readdirSync(path);
-
-  fileName.forEach((element) =>{
-    let newName = prefix + element
-
-    let oldPath = "./Anubhav/regular" + "/" + element
-    let newPath = path +'/'+ newName
-
-    fs.renameSync(oldPath , newPath)
-
-
-  })
-
-}
-
-function removePreFix(path : string , prefix : string){
-
-   const fileName = fs.readdirSync(path)
-
-   fileName.forEach((element) => {
-    let oldPath = path + '/' + element
-    let removed = element.replace(prefix , "")
-    let newPath = path + '/' + removed
-
-    fs.renameSync(oldPath , newPath)
-   })
-
-
-
-}
-
-removePreFix("./Anubhav" , "regularanu")
