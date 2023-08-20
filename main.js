@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-console.log("Hello");
 const fs_1 = __importDefault(require("fs"));
 const folderNames = [
     "Accessibility",
@@ -85,22 +84,4 @@ function createFolders() {
     }
 }
 // createFolders();
-function generateFileNames(path) {
-    console.log('generating...');
-    const dir = fs_1.default.readdirSync(path);
-    const json = JSON.stringify(dir);
-    // saving
-    fs_1.default.writeFileSync('./temp/names.json', json);
-    console.log('done');
-}
-// generateFileNames('./temp/icons')
-function addPrefix(path, prefix) {
-    let files = fs_1.default.readdirSync(path);
-    console.log(files);
-    files.forEach((file) => {
-        const newFile = prefix + file;
-        const oldPath = path + '/' + file;
-        const newPath = path + '/' + newFile;
-        fs_1.default.renameSync(oldPath, newPath);
-    });
-}
+

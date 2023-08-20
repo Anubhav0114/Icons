@@ -1,4 +1,4 @@
-console.log("Hello");
+
 
 import fs from "fs";
 import path from "path";
@@ -102,16 +102,4 @@ function generateFileNames(path: string){
 
 // generateFileNames('./temp/icons')
 
-
-
-function addPrefix(path: string, prefix: string) {
-  let files = fs.readdirSync(path);
-  console.log(files)
-  files.forEach((file) => {
-    const newFile = prefix+file
-    const oldPath = path+'/'+file
-    const newPath = path+'/'+newFile
-    fs.renameSync(oldPath, newPath)
-  });
-}
 
