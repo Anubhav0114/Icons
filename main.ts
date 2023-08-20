@@ -86,20 +86,36 @@ function createFolders() {
 
 // createFolders();
 
-
-
-function generateFileNames(path: string){
-
-  console.log('generating...')
-  const dir = fs.readdirSync(path)
-  const json = JSON.stringify(dir)
+function generateFileNames(path: string) {
+  console.log("generating...");
+  const dir = fs.readdirSync(path).map(item => {
+    return item.split('.')[0]
+  });
+  const json = JSON.stringify(dir);
   // saving
-  fs.writeFileSync('./temp/names.json', json)
+  fs.writeFileSync("./temp/names.json", json);
 
-  console.log('done')
+  console.log("done");
 }
 
-// generateFileNames('./temp/icons')
+generateFileNames('./temp/icons')
 
 
-// function generate
+
+//temp.txt
+function addPrefix(path: string, prefix: string) {
+  // get all files name
+  const fileNames = fs.readdirSync(path);
+
+  fileNames.forEach((element) => {
+    let newName = prefix + element;
+
+    let oldPath = path + "/" + element;
+    let newPath = path + '/' + newName
+
+    fs.renameSync(oldPath, newPath);
+  });
+
+}
+
+// addPrefix("./temp/icons", "anu-");
