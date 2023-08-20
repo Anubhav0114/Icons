@@ -1,6 +1,7 @@
 console.log("Hello");
 
 import fs from "fs";
+import path from "path";
 
 const folderNames = [
   "Accessibility",
@@ -114,4 +115,3 @@ function addPrefix(path: string, prefix: string) {
   });
 }
 
-addPrefix("sayam/ionicons","ionicon-")
