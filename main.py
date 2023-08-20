@@ -11,13 +11,13 @@ outCount = 1
 sharpCount = 1
 # Print the full file names
 for file_name in file_names:
-    outline = file_name.endswith('outline.svg')
+    # outline = file_name.endswith('outline.svg')
     sharp = file_name.endswith('sharp.svg')
-    if outline:
-        shutil.move("./sayam/ionicons/"+file_name,'./sayam/fill/')
-        outCount = outCount+1
-        print("outline:- "+file_name)
-        print("Moved")
+    # if outline:
+    #     shutil.move("./sayam/ionicons/"+file_name,'./sayam/fill/')
+    #     outCount = outCount+1
+    #     print("outline:- "+file_name)
+    #     print("Moved")
     if sharp:
         shutil.move("./sayam/ionicons/"+file_name,'./sayam/stroke/')
         sharpCount = sharpCount+1
