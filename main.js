@@ -86,13 +86,13 @@ function createFolders() {
 // createFolders();
 function generateFileNames(path) {
     console.log("generating...");
-    const dir = fs_1.default.readdirSync(path).map(item => {
-        return item.split('.')[0];
+    const dir = fs_1.default.readdirSync(path).map((item) => {
+        return item.split(".")[0];
     });
     const json = JSON.stringify(dir);
     // saving
-    fs_1.default.writeFileSync('./temp/names.json', json);
-    console.log('done');
+    fs_1.default.writeFileSync("./temp/names.json", json);
+    console.log("done");
 }
 // generateFileNames('./temp/icons')
 // function generate
@@ -100,18 +100,25 @@ function renameFileName(path, prefix) {
     const fileName = fs_1.default.readdirSync(path);
     fileName.forEach((element) => {
         let newName = prefix + element;
-        let oldPath = "./Anubhav/regular" + "/" + element;
-        let newPath = path + '/' + newName;
+        let oldPath = path + "/" + element;
+        let newPath = path + "/" + newName;
         fs_1.default.renameSync(oldPath, newPath);
     });
 }
 function removePreFix(path, prefix) {
     const fileName = fs_1.default.readdirSync(path);
     fileName.forEach((element) => {
-        let oldPath = path + '/' + element;
+        let oldPath = path + "/" + element;
         let removed = element.replace(prefix, "");
-        let newPath = path + '/' + removed;
+        let newPath = path + "/" + removed;
         fs_1.default.renameSync(oldPath, newPath);
     });
 }
-removePreFix("./Anubhav", "regularanu");
+// removePreFix("./Anubhav" , "regularanu")
+function removeUnmatchedFile(strokePath, solidPath) {
+    const strokeFileName = fs_1.default.readdirSync(strokePath);
+    const solidFileName = fs_1.default.readdirSync(solidPath);
+    const rejectList = Array();
+    strokeFileName.forEach((element) => {
+    });
+}

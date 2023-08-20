@@ -1,5 +1,3 @@
-
-
 import fs from "fs";
 
 const folderNames = [
@@ -88,53 +86,54 @@ function createFolders() {
 
 function generateFileNames(path: string) {
   console.log("generating...");
-  const dir = fs.readdirSync(path).map(item => {
-    return item.split('.')[0]
+  const dir = fs.readdirSync(path).map((item) => {
+    return item.split(".")[0];
   });
   const json = JSON.stringify(dir);
   // saving
-  fs.writeFileSync('./temp/names.json', json)
+  fs.writeFileSync("./temp/names.json", json);
 
-  console.log('done')
+  console.log("done");
 }
 
 // generateFileNames('./temp/icons')
 
-
-
 // function generate
 
-function renameFileName(path : string , prefix : string){
-
+function renameFileName(path: string, prefix: string) {
   const fileName = fs.readdirSync(path);
 
-  fileName.forEach((element) =>{
-    let newName = prefix + element
+  fileName.forEach((element) => {
+    let newName = prefix + element;
 
-    let oldPath = "./Anubhav/regular" + "/" + element
-    let newPath = path +'/'+ newName
+    let oldPath = path + "/" + element;
+    let newPath = path + "/" + newName;
 
-    fs.renameSync(oldPath , newPath)
-
-
-  })
-
+    fs.renameSync(oldPath, newPath);
+  });
 }
 
-function removePreFix(path : string , prefix : string){
+function removePreFix(path: string, prefix: string) {
+  const fileName = fs.readdirSync(path);
 
-   const fileName = fs.readdirSync(path)
+  fileName.forEach((element) => {
+    let oldPath = path + "/" + element;
+    let removed = element.replace(prefix, "");
+    let newPath = path + "/" + removed;
 
-   fileName.forEach((element) => {
-    let oldPath = path + '/' + element
-    let removed = element.replace(prefix , "")
-    let newPath = path + '/' + removed
-
-    fs.renameSync(oldPath , newPath)
-   })
-
-
-
+    fs.renameSync(oldPath, newPath);
+  });
 }
 
-removePreFix("./Anubhav" , "regularanu")
+// removePreFix("./Anubhav" , "regularanu")
+
+function removeUnmatchedFile(strokePath: string, solidPath: string) {
+  const strokeFileName = fs.readdirSync(strokePath);
+  const solidFileName = fs.readdirSync(solidPath);
+
+  const rejectList = Array<string>();
+
+  strokeFileName.forEach((element) => {
+    
+  });
+}
