@@ -1,4 +1,4 @@
-console.log("Hello");
+
 
 import fs from "fs";
 
@@ -93,29 +93,48 @@ function generateFileNames(path: string) {
   });
   const json = JSON.stringify(dir);
   // saving
-  fs.writeFileSync("./temp/names.json", json);
+  fs.writeFileSync('./temp/names.json', json)
 
-  console.log("done");
+  console.log('done')
 }
 
-generateFileNames('./temp/icons')
+// generateFileNames('./temp/icons')
 
 
 
-//temp.txt
-function addPrefix(path: string, prefix: string) {
-  // get all files name
-  const fileNames = fs.readdirSync(path);
+// function generate
 
-  fileNames.forEach((element) => {
-    let newName = prefix + element;
+function renameFileName(path : string , prefix : string){
 
-    let oldPath = path + "/" + element;
-    let newPath = path + '/' + newName
+  const fileName = fs.readdirSync(path);
 
-    fs.renameSync(oldPath, newPath);
-  });
+  fileName.forEach((element) =>{
+    let newName = prefix + element
+
+    let oldPath = "./Anubhav/regular" + "/" + element
+    let newPath = path +'/'+ newName
+
+    fs.renameSync(oldPath , newPath)
+
+
+  })
 
 }
 
-// addPrefix("./temp/icons", "anu-");
+function removePreFix(path : string , prefix : string){
+
+   const fileName = fs.readdirSync(path)
+
+   fileName.forEach((element) => {
+    let oldPath = path + '/' + element
+    let removed = element.replace(prefix , "")
+    let newPath = path + '/' + removed
+
+    fs.renameSync(oldPath , newPath)
+   })
+
+
+
+}
+
+removePreFix("./Anubhav" , "regularanu")

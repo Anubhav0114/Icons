@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-console.log("Hello");
 const fs_1 = __importDefault(require("fs"));
 const folderNames = [
     "Accessibility",
@@ -92,19 +91,27 @@ function generateFileNames(path) {
     });
     const json = JSON.stringify(dir);
     // saving
-    fs_1.default.writeFileSync("./temp/names.json", json);
-    console.log("done");
+    fs_1.default.writeFileSync('./temp/names.json', json);
+    console.log('done');
 }
-generateFileNames('./temp/icons');
-//temp.txt
-function addPrefix(path, prefix) {
-    // get all files name
-    const fileNames = fs_1.default.readdirSync(path);
-    fileNames.forEach((element) => {
+// generateFileNames('./temp/icons')
+// function generate
+function renameFileName(path, prefix) {
+    const fileName = fs_1.default.readdirSync(path);
+    fileName.forEach((element) => {
         let newName = prefix + element;
-        let oldPath = path + "/" + element;
+        let oldPath = "./Anubhav/regular" + "/" + element;
         let newPath = path + '/' + newName;
         fs_1.default.renameSync(oldPath, newPath);
     });
 }
-// addPrefix("./temp/icons", "anu-");
+function removePreFix(path, prefix) {
+    const fileName = fs_1.default.readdirSync(path);
+    fileName.forEach((element) => {
+        let oldPath = path + '/' + element;
+        let removed = element.replace(prefix, "");
+        let newPath = path + '/' + removed;
+        fs_1.default.renameSync(oldPath, newPath);
+    });
+}
+removePreFix("./Anubhav", "regularanu");
