@@ -1,5 +1,3 @@
-
-
 import fs from "fs";
 import path from "path";
 
@@ -87,19 +85,93 @@ function createFolders() {
 
 // createFolders();
 
+function generateFileNames(path: string, prefixFilter = '') {
+  console.log("generating...");
+  const dir = fs.readdirSync(path).map((item) => {
 
-
-function generateFileNames(path: string){
-
-  console.log('generating...')
-  const dir = fs.readdirSync(path)
-  const json = JSON.stringify(dir)
+    if(prefixFilter != ''){
+      return item.split(".")[0].replace(prefixFilter, '');
+    }else{
+      return item.split(".")[0];
+    }
+    
+  });
+  const json = JSON.stringify(dir);
   // saving
-  fs.writeFileSync('./temp/names.json', json)
+  fs.writeFileSync("./temp/names.json", json);
 
-  console.log('done')
+  console.log("done");
 }
 
-// generateFileNames('./temp/icons')
 
 
+
+
+
+generateFileNames('./pawan/font-awesome/solid', 'fs-')
+
+// function generate
+
+function renameFileName(path: string, prefix: string) {
+  const fileName = fs.readdirSync(path);
+
+  fileName.forEach((element) => {
+    let newName = prefix + element;
+
+    let oldPath = path + "/" + element;
+    let newPath = path + "/" + newName;
+
+    fs.renameSync(oldPath, newPath);
+  });
+}
+
+function removePreFix(path: string, prefix: string) {
+  const fileName = fs.readdirSync(path);
+
+  fileName.forEach((element) => {
+    let oldPath = path + "/" + element;
+    let removed = element.replace(prefix, "");
+    let newPath = path + "/" + removed;
+
+    fs.renameSync(oldPath, newPath);
+  });
+}
+
+// removePreFix("./Anubhav" , "regularanu")
+
+function removeUnmatchedFile(strokePath: string, solidPath: string) {
+  const strokeFileNames = fs.readdirSync(strokePath);
+  const solidFileNames = fs.readdirSync(solidPath);
+
+  const acceptedList = Array<string>();
+
+  strokeFileNames.forEach((element) => {
+    // if filename match then push the name in accepted array
+    if (solidFileNames.includes(element)) {
+      acceptedList.push(element);
+    }
+  });
+
+
+  // print all unmatched item
+  strokeFileNames.forEach(element => {
+    if(!acceptedList.includes(element)){
+
+      // print the rejected filename
+      console.log('stroke - ' + element)
+    }
+  });
+
+  solidFileNames.forEach(element => {
+    if(!acceptedList.includes(element)){
+
+      // print the rejected filename
+      console.log('solid - ' +element)
+    }
+  });
+
+  console.log(acceptedList)
+}
+
+
+// removeUnmatchedFile('./pawan/font-awesome/regular', "./pawan/font-awesome/solid")
