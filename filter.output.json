@@ -3,7 +3,7 @@
   { "category": "Alert", "keyword": [] },
   { "category": "Alphabet", "keyword": [] },
   { "category": "Animals", "keyword": [] },
-  { "category": "Arrows", "keyword": [] },
+  { "category": "Arrows", "keyword": ["arrow"] },
   { "category": "Astronomy", "keyword": [] },
   { "category": "Automotive", "keyword": [] },
   { "category": "Buildings", "keyword": [] },

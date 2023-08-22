@@ -1,0 +1,196 @@
+[
+  { "category": "Accessibility", "keyword": ["i-cursor", "universal-access"] },
+  {
+    "category": "Alert",
+    "keyword": ["bell", "bell-slash", "exclamation", "exclamation-triangle"]
+  },
+  { "category": "Alphabet", "keyword": ["alphabet", "letter"] },
+  {
+    "category": "Animals",
+    "keyword": [
+      "cat",
+      "dog",
+      "elephant",
+      "fish",
+      "horse",
+      "lion",
+      "panda",
+      "tiger"
+    ]
+  },
+  {
+    "category": "Arrows",
+    "keyword": [
+      "arrow-down",
+      "arrow-left",
+      "arrow-right",
+      "arrow-up",
+      "caret-down",
+      "caret-left",
+      "caret-right",
+      "caret-up",
+      "arrow",
+      "angle",
+      "angles"
+    ]
+  },
+  { "category": "Astronomy", "keyword": ["moon", "star", "sun"] },
+  { "category": "Automotive", "keyword": ["car", "motorcycle", "truck"] },
+  {
+    "category": "Buildings",
+    "keyword": ["home", "hospital", "office-building", "school", "skyscraper"]
+  },
+  {
+    "category": "Business",
+    "keyword": ["briefcase", "chart-bar", "chart-line", "money-bill", "store"]
+  },
+  { "category": "Camping", "keyword": ["campfire", "tent"] },
+  { "category": "Charity", "keyword": ["donate", "hand-heart"] },
+  {
+    "category": "Charts + Diagrams",
+    "keyword": ["bar-chart", "pie-chart", "line-chart"]
+  },
+  { "category": "Childhood", "keyword": ["baby", "ball", "teddy-bear"] },
+  {
+    "category": "Clothing + Fashion",
+    "keyword": ["dress", "shirt", "shoe", "sunglasses"]
+  },
+  { "category": "Coding", "keyword": ["code", "keyboard", "terminal"] },
+  {
+    "category": "Communication",
+    "keyword": ["comment", "envelope", "message", "phone", "sms"]
+  },
+  { "category": "Connectivity", "keyword": ["link", "network-wired", "wifi"] },
+  {
+    "category": "Construction",
+    "keyword": ["hammer", "screwdriver", "wrench"]
+  },
+  {
+    "category": "Design",
+    "keyword": ["palette", "pen", "ruler", "scale", "tools"]
+  },
+  {
+    "category": "Devices + Hardware",
+    "keyword": ["camera", "computer", "phone", "tablet"]
+  },
+  {
+    "category": "Disaster + Crisis",
+    "keyword": ["fire", "hospital-user", "hurricane"]
+  },
+  { "category": "Editing", "keyword": ["edit", "pencil", "scissors"] },
+  { "category": "Emoji", "keyword": ["emoji", "smile", "heart", "thumbs-up"] },
+  {
+    "category": "Education",
+    "keyword": ["book", "chalkboard", "graduation-cap"]
+  },
+  {
+    "category": "Energy",
+    "keyword": ["battery-empty", "battery-full", "plug", "solar-panel"]
+  },
+  { "category": "Files", "keyword": ["file", "folder", "paperclip"] },
+  { "category": "Film + Video", "keyword": ["clapperboard", "film", "video"] },
+  {
+    "category": "Food + Beverage",
+    "keyword": ["coffee", "pizza-slice", "utensils"]
+  },
+  {
+    "category": "Fruits + Vegetables",
+    "keyword": ["apple-whole", "banana", "carrot", "watermelon"]
+  },
+  { "category": "Gaming", "keyword": ["dice", "gamepad", "joystick"] },
+  { "category": "Genders", "keyword": ["genderless", "mars", "venus"] },
+  { "category": "Halloween", "keyword": ["bat", "candy-cane", "pumpkin"] },
+  {
+    "category": "Hands",
+    "keyword": ["hand-fist", "hand-holding-heart", "hand-peace"]
+  },
+  {
+    "category": "Holidays",
+    "keyword": ["christmas-tree", "fireworks", "gift"]
+  },
+  {
+    "category": "Household",
+    "keyword": ["bed", "chair", "lamp", "screwdriver"]
+  },
+  {
+    "category": "Humanitarian",
+    "keyword": ["ambulance", "hospital", "hand-holding-medical"]
+  },
+  { "category": "Logistics", "keyword": ["box", "forklift", "truck"] },
+  { "category": "Maps", "keyword": ["compass", "globe", "map", "pin"] },
+  {
+    "category": "Maritime",
+    "keyword": ["anchor", "boat", "lighthouse", "ship"]
+  },
+  {
+    "category": "Marketing",
+    "keyword": ["bullhorn", "megaphone", "presentation"]
+  },
+  {
+    "category": "Mathematics",
+    "keyword": ["calculator", "divide", "equals", "percent"]
+  },
+  {
+    "category": "Media Playback",
+    "keyword": ["backward", "forward", "pause", "play"]
+  },
+  {
+    "category": "Medical + Health",
+    "keyword": ["ambulance", "heart-pulse", "hospital-user", "stethoscope"]
+  },
+  { "category": "Money", "keyword": ["dollar-sign", "money-bill", "wallet"] },
+  {
+    "category": "Moving",
+    "keyword": ["moving-truck", "suitcase", "van-shuttle"]
+  },
+  {
+    "category": "Music + Audio",
+    "keyword": ["headphones", "music", "note", "speaker"]
+  },
+  { "category": "Nature", "keyword": ["cloud", "flower", "leaf", "sun"] },
+  { "category": "Numbers", "keyword": ["number", "one", "zero"] },
+  { "category": "Photos + Images", "keyword": ["camera", "image", "photo"] },
+  { "category": "Political", "keyword": ["flag", "vote"] },
+  {
+    "category": "Punctuation + Symbols",
+    "keyword": ["ampersand", "at", "hashtag", "question"]
+  },
+  { "category": "Religion", "keyword": ["cross", "star-of-david", "yin-yang"] },
+  { "category": "Science", "keyword": ["atom", "beaker", "microscope"] },
+  { "category": "Science Fiction", "keyword": ["alien", "ufo"] },
+  { "category": "Security", "keyword": ["lock", "shield", "unlock"] },
+  { "category": "Shapes", "keyword": ["circle", "square", "triangle"] },
+  { "category": "Shopping", "keyword": ["cart", "credit-card", "shop"] },
+  { "category": "Social", "keyword": ["chat", "comment", "share", "user"] },
+  { "category": "Spinners", "keyword": ["spinner"] },
+  {
+    "category": "Sports + Fitness",
+    "keyword": ["dumbbell", "soccer-ball", "yoga"]
+  },
+  { "category": "Spring", "keyword": ["flower", "leaf"] },
+  { "category": "Summer", "keyword": ["beach-ball", "ice-cream"] },
+  { "category": "Symbols", "keyword": ["heart", "infinity", "star"] },
+  { "category": "Technology", "keyword": ["cpu", "database", "server"] },
+  {
+    "category": "Text Editing",
+    "keyword": ["align-center", "align-left", "align-right", "bold", "italic"]
+  },
+  { "category": "Time", "keyword": ["clock", "hourglass", "watch"] },
+  { "category": "Tools", "keyword": ["hammer", "ruler", "tools", "wrench"] },
+  {
+    "category": "Transportation",
+    "keyword": ["bicycle", "bus", "car", "train"]
+  },
+  {
+    "category": "Travel",
+    "keyword": ["airplane", "camera", "map-marker", "passport"]
+  },
+  {
+    "category": "UI & UX",
+    "keyword": ["cursor", "eye", "pencil-ruler", "zoom-in", "zoom-out"]
+  },
+  { "category": "Valentine's Day", "keyword": ["heart", "rose", "gift"] },
+  { "category": "Weather", "keyword": ["cloud", "moon", "rain", "sun"] },
+  { "category": "Weddings", "keyword": ["ring", "heart", "cake"] },
+  { "category": "Winter", "keyword": ["mittens", "snowflake", "winter-hat"] }
+]
