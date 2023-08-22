@@ -94,6 +94,8 @@ function generateFilterStructure() {
 
 function createCategory(folderPath: string) {
     
+  createRequiredFolders()
+
   // get all icons from folder
   const fileNames = fs.readdirSync(folderPath);
 
@@ -154,6 +156,24 @@ function isContainKeyword(text: string, keywords: string[]) {
   }
 
   return false;
+}
+
+function createRequiredFolders(){
+  if(fs.existsSync('./temp') == false){
+    fs.mkdirSync("./temp");
+  }
+
+  if(fs.existsSync('./temp/icons') == false){
+    fs.mkdirSync("./temp/icons");
+  }
+
+  if(fs.existsSync('./temp/icons/failed') == false){
+    fs.mkdirSync("./temp/icons/failed");
+  }
+
+  if(fs.existsSync('./temp/icons/success') == false){
+    fs.mkdirSync("./temp/icons/success");
+  }
 }
 
 createCategory("./pawan/font-awesome/solid");

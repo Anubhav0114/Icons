@@ -1,3 +1,4 @@
 node_modules
-temp
-main.js
+temp/icons/failed/*.svg
+temp/icons/success/*
+*.js
