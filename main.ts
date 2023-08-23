@@ -113,6 +113,7 @@ function generateFileNames(path: string, prefixFilter = '') {
 // function generate
 
 function renameFileName(path: string, prefix: string) {
+
   const fileName = fs.readdirSync(path);
 
   fileName.forEach((element) => {
@@ -124,6 +125,7 @@ function renameFileName(path: string, prefix: string) {
     fs.renameSync(oldPath, newPath);
   });
 }
+renameFileName('./Rajat/solids','fr-')
 
 function removePreFix(path: string, prefix: string) {
   const fileName = fs.readdirSync(path);
@@ -179,7 +181,7 @@ function readFile(path : string){
     console.log(element);
   });
 }
-readFile("./temp/icons/failed")
+//readFile("./temp/icons/failed")
 
 
 // removeUnmatchedFile('./pawan/font-awesome/regular', "./pawan/font-awesome/solid")
