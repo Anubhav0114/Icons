@@ -108,7 +108,7 @@ function generateFileNames(path: string, prefixFilter = '') {
 
 
 
-generateFileNames('./pawan/font-awesome/solid', 'fs-')
+//generateFileNames('./pawan/font-awesome/solid', 'fs-')
 
 // function generate
 
@@ -172,6 +172,14 @@ function removeUnmatchedFile(strokePath: string, solidPath: string) {
 
   console.log(acceptedList)
 }
+
+function readFile(path : string){
+  const file = fs.readdirSync(path);
+ file.forEach(element => {
+    console.log(element);
+  });
+}
+readFile("./temp/icons/failed")
 
 
 // removeUnmatchedFile('./pawan/font-awesome/regular', "./pawan/font-awesome/solid")
