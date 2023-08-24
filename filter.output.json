@@ -1,9 +1,39 @@
 [
   { "category": "Accessibility", "keyword": [] },
   { "category": "Alert", "keyword": [] },
-  { "category": "Alphabet", "keyword": [] },
+  {
+    "category": "Alphabet",
+    "keyword": [
+      "-a.",
+      "-b.",
+      "-c.",
+      "-d.",
+      "-e.",
+      "-f.",
+      "-g.",
+      "-h.",
+      "-i.",
+      "-j.",
+      "-k.",
+      "-l.",
+      "-m.",
+      "-n.",
+      "-o.",
+      "-p.",
+      "-q.",
+      "-r.",
+      "-s.",
+      "-t.",
+      "-u.",
+      "-v.",
+      "-w.",
+      "-x.",
+      "-y.",
+      "-z."
+    ]
+  },
   { "category": "Animals", "keyword": [] },
-  { "category": "Arrows", "keyword": ["arrow"] },
+  { "category": "Arrows", "keyword": ["arrow", "angle", "up-"] },
   { "category": "Astronomy", "keyword": [] },
   { "category": "Automotive", "keyword": [] },
   { "category": "Buildings", "keyword": [] },
@@ -14,42 +44,118 @@
   { "category": "Childhood", "keyword": [] },
   { "category": "Clothing + Fashion", "keyword": [] },
   { "category": "Coding", "keyword": [] },
-  { "category": "Communication", "keyword": [] },
+  { "category": "Communication", "keyword": ["tower"] },
   { "category": "Connectivity", "keyword": [] },
   { "category": "Construction", "keyword": [] },
   { "category": "Design", "keyword": [] },
   { "category": "Devices + Hardware", "keyword": [] },
   { "category": "Disaster + Crisis", "keyword": [] },
   { "category": "Editing", "keyword": [] },
-  { "category": "Emoji", "keyword": [] },
-  { "category": "Education", "keyword": [] },
-  { "category": "Energy", "keyword": [] },
-  { "category": "Files", "keyword": [] },
-  { "category": "Film + Video", "keyword": [] },
-  { "category": "Food + Beverage", "keyword": [] },
-  { "category": "Fruits + Vegetables", "keyword": [] },
-  { "category": "Gaming", "keyword": [] },
-  { "category": "Genders", "keyword": [] },
-  { "category": "Halloween", "keyword": [] },
-  { "category": "Hands", "keyword": [] },
-  { "category": "Holidays", "keyword": [] },
-  { "category": "Household", "keyword": [] },
-  { "category": "Humanitarian", "keyword": [] },
-  { "category": "Logistics", "keyword": [] },
-  { "category": "Maps", "keyword": [] },
-  { "category": "Maritime", "keyword": [] },
-  { "category": "Marketing", "keyword": [] },
-  { "category": "Mathematics", "keyword": [] },
-  { "category": "Media Playback", "keyword": [] },
-  { "category": "Medical + Health", "keyword": [] },
-  { "category": "Money", "keyword": [] },
-  { "category": "Moving", "keyword": [] },
-  { "category": "Music + Audio", "keyword": ["headphones", "music", "Voicenote", "speaker"] },
+  { "category": "Emoji", "keyword": ["emoji", "smile", "heart", "thumbs-up"] },
+  {
+    "category": "Education",
+    "keyword": ["book", "chalkboard", "graduation-cap"]
+  },
+  {
+    "category": "Energy",
+    "keyword": ["battery-empty", "battery-full", "plug", "solar-panel"]
+  },
+  { "category": "Files", "keyword": ["file", "folder", "paperclip"] },
+  { "category": "Film + Video", "keyword": ["clapperboard", "film", "video"] },
+  {
+    "category": "Food + Beverage",
+    "keyword": ["coffee", "pizza-slice", "utensils"]
+  },
+  {
+    "category": "Fruits + Vegetables",
+    "keyword": ["apple-whole", "banana", "carrot", "watermelon"]
+  },
+  { "category": "Gaming", "keyword": ["dice", "gamepad", "joystick"] },
+  { "category": "Genders", "keyword": ["male", "female"] },
+  { "category": "Halloween", "keyword": ["bat", "candy-cane", "pumpkin"] },
+  {
+    "category": "Hands",
+    "keyword": ["hand-fist", "hand-holding-heart", "hand-peace", "hand"]
+  },
+  {
+    "category": "Holidays",
+    "keyword": ["christmas-tree", "fireworks", "gift"]
+  },
+  {
+    "category": "Household",
+    "keyword": ["bed", "chair", "lamp", "screwdriver"]
+  },
+  {
+    "category": "Humanitarian",
+    "keyword": ["ambulance", "hospital", "hand-holding-medical"]
+  },
+  { "category": "Logistics", "keyword": ["box", "forklift", "truck"] },
+  {
+    "category": "Maps",
+    "keyword": ["compass", "globe", "map", "pin", "location"]
+  },
+  {
+    "category": "Maritime",
+    "keyword": ["anchor", "boat", "lighthouse", "ship"]
+  },
+  {
+    "category": "Marketing",
+    "keyword": ["bullhorn", "megaphone", "presentation"]
+  },
+  {
+    "category": "Mathematics",
+    "keyword": ["calculator", "divide", "equals", "percent"]
+  },
+  {
+    "category": "Media Playback",
+    "keyword": ["backward", "forward", "pause", "play", "volume"]
+  },
+  {
+    "category": "Medical + Health",
+    "keyword": ["ambulance", "heart-pulse", "hospital-user", "stethoscope"]
+  },
+  { "category": "Money", "keyword": ["dollar-sign", "money-bill", "wallet"] },
+  {
+    "category": "Moving",
+    "keyword": ["moving-truck", "suitcase", "van-shuttle"]
+  },
+  {
+    "category": "Music + Audio",
+    "keyword": ["headphones", "music", "Voicenote", "speaker"]
+  },
   { "category": "Nature", "keyword": ["cloud", "flower", "leaf", "sun"] },
-  { "category": "Numbers", "keyword": ["number", "one", "zero","two" , "three","four","five","six","seven","eight","nine"] },
+  {
+    "category": "Numbers",
+    "keyword": [
+      "number",
+      "one",
+      "zero",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "-0.",
+      "-1.",
+      "-2.",
+      "-3.",
+      "-4.",
+      "-5.",
+      "-6.",
+      "-7.",
+      "-8.",
+      "-9."
+    ]
+  },
   { "category": "Photos + Images", "keyword": ["camera", "image", "photo"] },
   { "category": "Political", "keyword": ["flag", "vote"] },
-  { "category": "Punctuation + Symbols", "keyword": ["ampersand", "at", "hashtag", "question"] },
+  {
+    "category": "Punctuation + Symbols",
+    "keyword": ["ampersand", "at", "hashtag", "question"]
+  },
   { "category": "Religion", "keyword": ["cross", "star-of-david"] },
   { "category": "Science", "keyword": ["atom", "beaker", "microscope"] },
   { "category": "Science Fiction", "keyword": ["alien", "ufo"] },
@@ -58,13 +164,36 @@
   { "category": "Shopping", "keyword": ["cart", "credit-card", "shop"] },
   { "category": "Social", "keyword": ["chat", "comment", "share", "user"] },
   { "category": "Spinners", "keyword": ["spinner"] },
-  { "category": "Sports + Fitness", "keyword": ["dumbbell", "soccer-ball", "yoga"] },
-  { "category": "Text Formatting", "keyword": ["align-center", "align-left", "align-right", "bold", "italic"] },
+  {
+    "category": "Sports + Fitness",
+    "keyword": ["dumbbell", "soccer-ball", "yoga"]
+  },
+  {
+    "category": "Text Formatting",
+    "keyword": ["align-center", "align-left", "align-right", "bold", "italic"]
+  },
   { "category": "Time", "keyword": ["clock", "hourglass", "watch"] },
   { "category": "Toggle", "keyword": ["toggle-off", "toggle-on"] },
-  { "category": "Transportation", "keyword": ["bicycle", "bus", "car", "train"] },
-  { "category": "Travel + Hotel", "keyword": ["airplane", "camera", "map-marker", "passport"] },
-  { "category": "Users + People", "keyword": ["user" , "users"] },
+  {
+    "category": "Transportation",
+    "keyword": ["bicycle", "bus", "car", "train"]
+  },
+  {
+    "category": "Travel + Hotel",
+    "keyword": ["airplane", "camera", "map-marker", "passport"]
+  },
+  { "category": "Users + People", "keyword": ["user", "users"] },
   { "category": "Weather", "keyword": ["cloud", "moon", "rain", "sun"] },
-  { "category": "Writing", "keyword": ["pencil" , "pen" , "rular","brush","paint" ,"ruler","signature"] }
+  {
+    "category": "Writing",
+    "keyword": [
+      "pencil",
+      "pen",
+      "rular",
+      "brush",
+      "paint",
+      "ruler",
+      "signature"
+    ]
+  }
 ]
