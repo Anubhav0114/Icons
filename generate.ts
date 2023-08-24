@@ -93,8 +93,7 @@ function generateFilterStructure() {
 // generateFilterStructure()
 
 function createCategory(folderPath: string) {
-    
-  createRequiredFolders()
+  createRequiredFolders();
 
   // get all icons from folder
   const fileNames = fs.readdirSync(folderPath);
@@ -108,10 +107,10 @@ function createCategory(folderPath: string) {
   }>;
 
   // cleaning the dir
-  fs.rmdirSync("./temp/icons/failed", {
+  fs.rmSync("./temp/icons/failed", {
     recursive: true,
   });
-  fs.rmdirSync("./temp/icons/success", {
+  fs.rmSync("./temp/icons/success", {
     recursive: true,
   });
 
@@ -124,6 +123,7 @@ function createCategory(folderPath: string) {
     fs.mkdirSync("./temp/icons/success/" + element.category);
   });
 
+  let failedRecords = 0;
   // adding files to dir
   fileNames.forEach((element) => {
     let found = false;
@@ -140,12 +140,14 @@ function createCategory(folderPath: string) {
     }
 
     if (!found) {
-      console.log("not found");
+      failedRecords += 1;
       // save file to category
       const path = "./temp/icons/failed/" + element;
       fs.writeFileSync(path, fs.readFileSync(folderPath + "/" + element));
     }
   });
+
+  console.log("Failed record found: " + failedRecords);
 }
 
 function isContainKeyword(text: string, keywords: string[]) {
@@ -158,20 +160,20 @@ function isContainKeyword(text: string, keywords: string[]) {
   return false;
 }
 
-function createRequiredFolders(){
-  if(fs.existsSync('./temp') == false){
+function createRequiredFolders() {
+  if (fs.existsSync("./temp") == false) {
     fs.mkdirSync("./temp");
   }
 
-  if(fs.existsSync('./temp/icons') == false){
+  if (fs.existsSync("./temp/icons") == false) {
     fs.mkdirSync("./temp/icons");
   }
 
-  if(fs.existsSync('./temp/icons/failed') == false){
+  if (fs.existsSync("./temp/icons/failed") == false) {
     fs.mkdirSync("./temp/icons/failed");
   }
 
-  if(fs.existsSync('./temp/icons/success') == false){
+  if (fs.existsSync("./temp/icons/success") == false) {
     fs.mkdirSync("./temp/icons/success");
   }
 }

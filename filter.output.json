@@ -1,6 +1,14 @@
 [
-  { "category": "Accessibility", "keyword": [] },
-  { "category": "Alert", "keyword": [] },
+  {
+    "category": "Accessibility",
+    "keyword": [
+     
+    ]
+  },
+  {
+    "category": "Alert",
+    "keyword": ["bang-lightning", "exclamation-triangle", "xmark", "-bell"]
+  },
   {
     "category": "Alphabet",
     "keyword": [
@@ -33,14 +41,14 @@
     ]
   },
   { "category": "Animals", "keyword": [] },
-  { "category": "Arrows", "keyword": ["arrow", "angle", "up-"] },
+  { "category": "Arrows", "keyword": ["arrow", "angle", "up-", "chevron"] },
   { "category": "Astronomy", "keyword": [] },
   { "category": "Automotive", "keyword": [] },
-  { "category": "Buildings", "keyword": [] },
+  { "category": "Buildings", "keyword": ["building"] },
   { "category": "Business", "keyword": [] },
   { "category": "Camping", "keyword": [] },
   { "category": "Charity", "keyword": [] },
-  { "category": "Charts + Diagrams", "keyword": [] },
+  { "category": "Charts + Diagrams", "keyword": ["chart"] },
   { "category": "Childhood", "keyword": [] },
   { "category": "Clothing + Fashion", "keyword": [] },
   { "category": "Coding", "keyword": [] },
@@ -51,7 +59,7 @@
   { "category": "Devices + Hardware", "keyword": [] },
   { "category": "Disaster + Crisis", "keyword": [] },
   { "category": "Editing", "keyword": [] },
-  { "category": "Emoji", "keyword": ["emoji", "smile", "heart", "thumbs-up"] },
+  { "category": "Emoji", "keyword": ["emoji", "smile", "heart", "thumbs-up", "face"] },
   {
     "category": "Education",
     "keyword": ["book", "chalkboard", "graduation-cap"]
@@ -70,7 +78,7 @@
     "category": "Fruits + Vegetables",
     "keyword": ["apple-whole", "banana", "carrot", "watermelon"]
   },
-  { "category": "Gaming", "keyword": ["dice", "gamepad", "joystick"] },
+  { "category": "Gaming", "keyword": ["dice", "gamepad", "joystick", "chess"] },
   { "category": "Genders", "keyword": ["male", "female"] },
   { "category": "Halloween", "keyword": ["bat", "candy-cane", "pumpkin"] },
   {
@@ -172,7 +180,7 @@
     "category": "Text Formatting",
     "keyword": ["align-center", "align-left", "align-right", "bold", "italic"]
   },
-  { "category": "Time", "keyword": ["clock", "hourglass", "watch"] },
+  { "category": "Time", "keyword": ["clock", "hourglass", "watch", "calendar"] },
   { "category": "Toggle", "keyword": ["toggle-off", "toggle-on"] },
   {
     "category": "Transportation",
@@ -182,7 +190,7 @@
     "category": "Travel + Hotel",
     "keyword": ["airplane", "camera", "map-marker", "passport"]
   },
-  { "category": "Users + People", "keyword": ["user", "users"] },
+  { "category": "Users + People", "keyword": ["user", "users", "person"] },
   { "category": "Weather", "keyword": ["cloud", "moon", "rain", "sun"] },
   {
     "category": "Writing",
