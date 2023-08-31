@@ -7,7 +7,7 @@
   },
   {
     "category": "Alert",
-    "keyword": ["bang-lightning", "exclamation-triangle", "xmark", "-bell"]
+    "keyword": ["bang-lightning", "exclamation-triangle", "xmark", "-bell","alarm"]
   },
   {
     "category": "Alphabet",
@@ -40,11 +40,11 @@
       "-z."
     ]
   },
-  { "category": "Animals", "keyword": [] },
-  { "category": "Arrows", "keyword": ["arrow", "angle", "up-", "chevron"] },
+  { "category": "Animals", "keyword": ["virus","viruses","worm"] },
+  { "category": "Arrows", "keyword": ["arrow", "angle", "up-", "chevron","sort"] },
   { "category": "Astronomy", "keyword": [] },
-  { "category": "Automotive", "keyword": [] },
-  { "category": "Buildings", "keyword": ["building"] },
+  { "category": "Automotive", "keyword": ["taxi","tractor"] },
+  { "category": "Buildings", "keyword": ["building","toilet","vihara","warehouse","window"] },
   { "category": "Business", "keyword": [] },
   { "category": "Camping", "keyword": [] },
   { "category": "Charity", "keyword": [] },
@@ -56,13 +56,13 @@
   { "category": "Connectivity", "keyword": [] },
   { "category": "Construction", "keyword": [] },
   { "category": "Design", "keyword": [] },
-  { "category": "Devices + Hardware", "keyword": [] },
+  { "category": "Devices + Hardware", "keyword": ["tablet","wifi"] },
   { "category": "Disaster + Crisis", "keyword": [] },
   { "category": "Editing", "keyword": [] },
-  { "category": "Emoji", "keyword": ["emoji", "smile", "heart", "thumbs-up", "face"] },
+  { "category": "Emoji", "keyword": ["emoji", "smile", "heart", "thumbs-up", "face","angry"] },
   {
     "category": "Education",
-    "keyword": ["book", "chalkboard", "graduation-cap"]
+    "keyword": ["book", "chalkboard", "graduation-cap","bible"]
   },
   {
     "category": "Energy",
@@ -72,13 +72,13 @@
   { "category": "Film + Video", "keyword": ["clapperboard", "film", "video"] },
   {
     "category": "Food + Beverage",
-    "keyword": ["coffee", "pizza-slice", "utensils"]
+    "keyword": ["coffee", "pizza-slice", "utensils","wine","wiskey","beer"]
   },
   {
     "category": "Fruits + Vegetables",
     "keyword": ["apple-whole", "banana", "carrot", "watermelon"]
   },
-  { "category": "Gaming", "keyword": ["dice", "gamepad", "joystick", "chess"] },
+  { "category": "Gaming", "keyword": ["dice", "gamepad", "joystick", "chess","volleyball","baseball","basketball","ball","bowling"] },
   { "category": "Genders", "keyword": ["male", "female"] },
   { "category": "Halloween", "keyword": ["bat", "candy-cane", "pumpkin"] },
   {
@@ -91,7 +91,7 @@
   },
   {
     "category": "Household",
-    "keyword": ["bed", "chair", "lamp", "screwdriver"]
+    "keyword": ["bed", "chair", "lamp", "screwdriver","basket","bowl"]
   },
   {
     "category": "Humanitarian",
@@ -122,7 +122,7 @@
     "category": "Medical + Health",
     "keyword": ["ambulance", "heart-pulse", "hospital-user", "stethoscope"]
   },
-  { "category": "Money", "keyword": ["dollar-sign", "money-bill", "wallet"] },
+  { "category": "Money", "keyword": ["dollar-sign", "money-bill", "wallet","bank"] },
   {
     "category": "Moving",
     "keyword": ["moving-truck", "suitcase", "van-shuttle"]
